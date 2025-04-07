@@ -1,17 +1,15 @@
 package app;
 
-import src.Vehiculo;
-
 public class Main {
     public static void main(String[] args) {
-        Vehiculo vehiculo1 = new Vehiculo("AB123CD", "Toyota", 2020, 1500);
-        Vehiculo vehiculo2 = new Vehiculo("EF456GH", "Ford", 2018, 1200);
-        Vehiculo vehiculo3 = new Vehiculo("IJ789KL", "Mercedes", 2022, 1800);
+        Vehiculo v1 = new Vehiculo("ABC123", "Ford", 2015, 1000);
+        Vehiculo v2 = new Vehiculo("XYZ789", "Chevrolet", 2018, 1200);
+        Vehiculo v3 = new Vehiculo("LMN456", "Toyota", 2020, 800);
 
-        vehiculo1.mostrarInformacion();
-        System.out.println("-----------------------------");
-        vehiculo2.mostrarInformacion();
-        System.out.println("-----------------------------");
-        vehiculo3.mostrarInformacion();
+        VehiculoPrinter.imprimir(v1);
+        VehiculoPrinter.imprimir(v2);
+        VehiculoPrinter.imprimir(v3);
     }
 }
+
+
