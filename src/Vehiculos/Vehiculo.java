@@ -1,4 +1,4 @@
-package app;
+package Vehiculos;
 
 import java.time.Year;
 
@@ -41,7 +41,7 @@ public abstract class Vehiculo {
         return capacidadCargaKg;
     }
 
-
+    // Método abstracto para polimorfismo
     public abstract String obtenerInformacion();
 }
 

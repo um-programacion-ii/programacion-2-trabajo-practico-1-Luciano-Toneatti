@@ -1,23 +1,42 @@
 package app;
 
+import Vehiculos.Auto;
+import Vehiculos.Camion;
+import Vehiculos.Vehiculo;
+import Vehiculos.VehiculoPrinter;
+
 import java.util.ArrayList;
-import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        Vehiculo camion1 = new Camion("ABC123", "Scania", 2015, 8000.0, true);
-        Vehiculo camion2 = new Camion("DEF456", "Volvo", 2018, 9000.0, false);
-        Vehiculo auto1 = new Auto("GHI789", "Toyota", 2020, 500.0, 5);
+        ArrayList<Vehiculo> vehiculos = new ArrayList<>();
 
-        List<Vehiculo> vehiculos = new ArrayList<>();
+        Auto auto1 = new Auto("ABC123", "Toyota", 2015, 500, 5);
+        Camion camion1 = new Camion("DEF456", "Mercedes", 2010, 8000, true);
+        Camion camion2 = new Camion("GHI789", "Volvo", 2020, 10000, false);
+
+        vehiculos.add(auto1);
         vehiculos.add(camion1);
         vehiculos.add(camion2);
-        vehiculos.add(auto1);
 
-        VehiculoPrinter printer = new VehiculoPrinter();
-        printer.imprimirInformacion(vehiculos);
+        System.out.println("🚗 Lista de vehículos:");
+        for (Vehiculo vehiculo : vehiculos) {
+            VehiculoPrinter.imprimir(vehiculo);
+        }
+
+        // Búsqueda por patente
+        String patenteBuscada = "DEF456";
+        System.out.println("\n🔍 Buscando vehículo con patente " + patenteBuscada + "...");
+        for (Vehiculo vehiculo : vehiculos) {
+            if (vehiculo.getPatente().equalsIgnoreCase(patenteBuscada)) {
+                System.out.println("✅ Vehículo encontrado:");
+                VehiculoPrinter.imprimir(vehiculo);
+            }
+        }
     }
 }
+
+
 
 
 
