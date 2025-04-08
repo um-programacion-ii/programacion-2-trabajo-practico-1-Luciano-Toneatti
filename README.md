@@ -1,6 +1,49 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/-JQrLgaz)
 # 🧠 Trabajo Práctico: Sistema de Gestión de Vehículos (Java + SOLID + GitHub)
 
+## Alumno: Luciano Toneatti
+
+## ⚙️ Requisitos previos
+Para compilar y ejecutar este proyecto necesitás tener instalado lo siguiente:
+
+✅ Java Development Kit (JDK) 8 o superior
+
+✅ IntelliJ IDEA (recomendado)
+
+✅ Git para clonar el repositorio desde GitHub
+
+## 🚀 Instrucciones para ejecutar el proyecto
+🛠️ Pasos para compilar y ejecutar:
+
+Clonar el repositorio: git@github.com:um-programacion-ii/programacion-2-trabajo-practico-1-Luciano-Toneatti.git
+
+Navegar al directorio del proyecto:
+cd programacion-2-trabajo-practico-1-Luciano-Toneatti
+cd src
+
+Compilar la carpeta src 
+
+Ejecutar el programa de Main que esta dentro de src/app:
+java app.Main
+
+## 💡 Ejemplos de uso
+Cuando ejecutes el proyecto, se imprimirá en consola una lista de vehículos gestionados (camiones y autos) con sus datos:
+
+🚛 Vehículo: Camión
+Patente: ABC123
+Marca: Scania
+Año: 2020
+Capacidad de Carga: 5000.0kg
+¿Tiene acoplado?: Sí
+
+🚗 Vehículo: Auto
+Patente: XYZ789
+Marca: Toyota
+Año: 2022
+Capacidad de Carga: 300.0kg
+Cantidad de pasajeros: 5
+
+
 ## 📌 Objetivo General
 
 Desarrollar una aplicación en Java para gestionar vehículos de una empresa, aplicando los principios de programación orientada a objetos y los **primeros tres principios SOLID**:  
@@ -157,9 +200,3 @@ Implementar la clase base `Vehiculo` que servirá como punto de partida para la 
     - Ejemplos de uso
 
 > ⏰ **Fecha de vencimiento**: 09/04/2025 a las 13:00 hs
-
----
-
-## 📝 Licencia
-
-Este trabajo es parte del curso de Programación 2 de Ingeniería en Informática. Uso educativo únicamente.
