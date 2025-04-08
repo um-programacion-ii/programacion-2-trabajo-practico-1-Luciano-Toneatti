@@ -1,17 +1,23 @@
 package app;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
+        Vehiculo camion1 = new Camion("ABC123", "Scania", 2015, 8000.0, true);
+        Vehiculo camion2 = new Camion("DEF456", "Volvo", 2018, 9000.0, false);
+        Vehiculo auto1 = new Auto("GHI789", "Toyota", 2020, 500.0, 5);
+
+        List<Vehiculo> vehiculos = new ArrayList<>();
+        vehiculos.add(camion1);
+        vehiculos.add(camion2);
+        vehiculos.add(auto1);
+
         VehiculoPrinter printer = new VehiculoPrinter();
-
-        Vehiculo v1 = new Vehiculo("ABC123", "Toyota", 2015, 1000);
-        Vehiculo v2 = new Vehiculo("DEF456", "Ford", 2018, 1500);
-        Camion camion = new Camion("GHI789", "Scania", 2020, 5000, true);
-
-        printer.imprimir(v1);
-        printer.imprimir(v2);
-        printer.imprimir(camion);
+        printer.imprimirInformacion(vehiculos);
     }
 }
+
 
 

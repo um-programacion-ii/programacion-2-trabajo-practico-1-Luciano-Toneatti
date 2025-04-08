@@ -8,11 +8,12 @@ public class Camion extends Vehiculo {
         this.tieneAcoplado = tieneAcoplado;
     }
 
-    public boolean isTieneAcoplado() {
-        return tieneAcoplado;
-    }
-
-    public void setTieneAcoplado(boolean tieneAcoplado) {
-        this.tieneAcoplado = tieneAcoplado;
+    @Override
+    public String obtenerInformacion() {
+        return getMarca() + " - " + getPatente() +
+                " - " + getAnio() +
+                " - Capacidad: " + getCapacidadCargaKg() + "kg" +
+                " - Tiene acoplado: " + (tieneAcoplado ? "Sí" : "No");
     }
 }
+

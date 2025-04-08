@@ -2,7 +2,7 @@ package app;
 
 import java.time.Year;
 
-public class Vehiculo {
+public abstract class Vehiculo {
     private String patente;
     private String marca;
     private int anio;
@@ -29,32 +29,19 @@ public class Vehiculo {
         return patente;
     }
 
-    public void setPatente(String patente) {
-        this.patente = patente;
-    }
-
     public String getMarca() {
         return marca;
-    }
-
-    public void setMarca(String marca) {
-        this.marca = marca;
     }
 
     public int getAnio() {
         return anio;
     }
 
-    public void setAnio(int anio) {
-        this.anio = anio;
-    }
-
     public double getCapacidadCargaKg() {
         return capacidadCargaKg;
     }
 
-    public void setCapacidadCargaKg(double capacidadCargaKg) {
-        this.capacidadCargaKg = capacidadCargaKg;
-    }
 
+    public abstract String obtenerInformacion();
 }
+
